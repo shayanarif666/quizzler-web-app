@@ -74,7 +74,7 @@ body {
     font-size: 26px;
     color: var(--primary);
     font-family: "Poppins", sans-serif;
-    font-weight: 600;
+    font-weight: 800;
     font-style: normal;
 }
 
@@ -191,7 +191,7 @@ body {
     margin: 4px 0 10px;
     font-size: 28px;
     color: var(--primary);
-    font-weight: 800;
+    font-weight: 500;
 }
 
 .lang-tabs {
