@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Quizzler — Home</title>
+
+    <!-- Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="topbar">
+        <div class="topbar-inner">
+            <div class="brand">QUIZZLER.</div>
+
+            <div class="search">
+                <i class="ri-search-line"></i>
+                <input type="text" placeholder="Search Quiz…" aria-label="Search Quiz">
+            </div>
+
+            <div class="actions">
+                <button class="icon-btn search-mobile"><i class="ri-search-line"></i></button>
+                <button class="icon-btn" title="Toggle Theme"><i class="ri-moon-line"></i></button>
+                <span class="divider">|</span>
+                <div class="avatar" title="Profile">MS</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="wrap">
+
+        <!-- ============ NEW ANALYTICS SECTION ============ -->
+        <section class="analytics">
+            <div class="analytics-head">
+                <h1 class="title">Analytics</h1>
+                <span class="range-chip"><i class="ri-time-line"></i> All-time</span>
+            </div>
+
+            <div class="a-grid">
+                <!-- Card: General OOP -->
+                <article class="a-card">
+                    <div class="a-top">
+                        <div class="a-icon a-purple"><i class="ri-node-tree"></i></div>
+                        <div class="a-meta">
+                            <div class="a-title">General OOP</div>
+                            <div class="a-sub">Total Plays</div>
+                        </div>
+                        <div class="a-value">124</div>
+                    </div>
+                    <div class="a-foot">
+                        <span class="trend up"><i class="ri-arrow-up-s-line"></i> 4.2%</span>
+                        <span class="muted">vs last week</span>
+                    </div>
+                </article>
+
+                <!-- Card: Encapsulation -->
+                <article class="a-card">
+                    <div class="a-top">
+                        <div class="a-icon a-green"><i class="ri-database-2-line"></i></div>
+                        <div class="a-meta">
+                            <div class="a-title">Encapsulation</div>
+                            <div class="a-sub">Total Plays</div>
+                        </div>
+                        <div class="a-value">98</div>
+                    </div>
+                    <div class="a-foot">
+                        <span class="trend up"><i class="ri-arrow-up-s-line"></i> 1.8%</span>
+                        <span class="muted">vs last week</span>
+                    </div>
+                </article>
+
+                <!-- Card: Inheritance -->
+                <article class="a-card">
+                    <div class="a-top">
+                        <div class="a-icon a-blue"><i class="ri-git-merge-line"></i></div>
+                        <div class="a-meta">
+                            <div class="a-title">Inheritance</div>
+                            <div class="a-sub">Total Plays</div>
+                        </div>
+                        <div class="a-value">76</div>
+                    </div>
+                    <div class="a-foot">
+                        <span class="trend down"><i class="ri-arrow-down-s-line"></i> 0.7%</span>
+                        <span class="muted">vs last week</span>
+                    </div>
+                </article>
+
+                <!-- Card: Polymorphism -->
+                <article class="a-card">
+                    <div class="a-top">
+                        <div class="a-icon a-orange"><i class="ri-shapes-line"></i></div>
+                        <div class="a-meta">
+                            <div class="a-title">Polymorphism</div>
+                            <div class="a-sub">Total Plays</div>
+                        </div>
+                        <div class="a-value">65</div>
+                    </div>
+                    <div class="a-foot">
+                        <span class="trend up"><i class="ri-arrow-up-s-line"></i> 3.1%</span>
+                        <span class="muted">vs last week</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- ============ /NEW ANALYTICS SECTION ============ -->
+
+        <!-- Quizzes header -->
+        <section>
+            <!-- Language tabs -->
+            <div class="lang-tabs" role="tablist" aria-label="Languages">
+                <button class="tab">C++</button>
+                <button class="tab">C#</button>
+                <button class="tab active">JavaScript</button>
+                <button class="tab">Java</button>
+            </div>
+
+            <div class="section-label">Quizzes by Language: Object-Oriented Programming</div>
+
+            <!-- Cards grid (3 → 2 → 1) -->
+            <div class="cards">
+                <!-- Card 1 -->
+                <article class="quiz-card v2">
+                    <div class="qc-top">
+                        <div class="qc-icon"><i class="ri-javascript-line"></i></div>
+                        <div class="qc-headings">
+                            <h3 class="qc-title">General OOP Questions</h3>
+                            <div class="qc-sub">6 Questions</div>
+                        </div>
+                    </div>
+                    <div class="qc-meta"><span class="qc-label">Score</span><span class="qc-value">0%</span></div>
+                    <div class="qc-progress"><span style="width:0%"></span></div>
+                    <div class="qc-footer">
+                        <span class="chip chip-beginner"><i class="ri-leaf-line"></i> Beginner</span>
+                        <button class="play-btn"><i class="ri-play-fill"></i><span>Play</span></button>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="quiz-card v2">
+                    <div class="qc-top">
+                        <div class="qc-icon"><i class="ri-javascript-line"></i></div>
+                        <div class="qc-headings">
+                            <h3 class="qc-title">Abstraction Questions</h3>
+                            <div class="qc-sub">6 Questions</div>
+                        </div>
+                    </div>
+                    <div class="qc-meta"><span class="qc-label">Score</span><span class="qc-value">0%</span></div>
+                    <div class="qc-progress"><span style="width:0%"></span></div>
+                    <div class="qc-footer">
+                        <span class="chip chip-advance"><i class="ri-leaf-line"></i> Advanced</span>
+                        <button class="play-btn"><i class="ri-play-fill"></i><span>Play</span></button>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="quiz-card v2">
+                    <div class="qc-top">
+                        <div class="qc-icon"><i class="ri-javascript-line"></i></div>
+                        <div class="qc-headings">
+                            <h3 class="qc-title">Exception Handling in OOP Questions</h3>
+                            <div class="qc-sub">6 Questions</div>
+                        </div>
+                    </div>
+                    <div class="qc-meta"><span class="qc-label">Score</span><span class="qc-value">0%</span></div>
+                    <div class="qc-progress"><span style="width:0%"></span></div>
+                    <div class="qc-footer">
+                        <span class="chip chip-intermediate"><i class="ri-leaf-line"></i> Intermediate</span>
+                        <button class="play-btn"><i class="ri-play-fill"></i><span>Play</span></button>
+                    </div>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="quiz-card v2">
+                    <div class="qc-top">
+                        <div class="qc-icon"><i class="ri-javascript-line"></i></div>
+                        <div class="qc-headings">
+                            <h3 class="qc-title">Encapsulation Questions</h3>
+                            <div class="qc-sub">8 Questions</div>
+                        </div>
+                    </div>
+                    <div class="qc-meta"><span class="qc-label">Score</span><span class="qc-value">0%</span></div>
+                    <div class="qc-progress"><span style="width:0%"></span></div>
+                    <div class="qc-footer">
+                        <span class="chip chip-beginner"><i class="ri-leaf-line"></i> Beginner</span>
+                        <button class="play-btn"><i class="ri-play-fill"></i><span>Play</span></button>
+                    </div>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="quiz-card v2">
+                    <div class="qc-top">
+                        <div class="qc-icon"><i class="ri-javascript-line"></i></div>
+                        <div class="qc-headings">
+                            <h3 class="qc-title">Inheritance Questions</h3>
+                            <div class="qc-sub">10 Questions</div>
+                        </div>
+                    </div>
+                    <div class="qc-meta"><span class="qc-label">Score</span><span class="qc-value">0%</span></div>
+                    <div class="qc-progress"><span style="width:0%"></span></div>
+                    <div class="qc-footer">
+                        <span class="chip chip-beginner"><i class="ri-leaf-line"></i> Beginner</span>
+                        <button class="play-btn"><i class="ri-play-fill"></i><span>Play</span></button>
+                    </div>
+                </article>
+
+                <!-- Card 6 -->
+                <article class="quiz-card v2">
+                    <div class="qc-top">
+                        <div class="qc-icon"><i class="ri-javascript-line"></i></div>
+                        <div class="qc-headings">
+                            <h3 class="qc-title">Polymorphism Questions</h3>
+                            <div class="qc-sub">7 Questions</div>
+                        </div>
+                    </div>
+                    <div class="qc-meta"><span class="qc-label">Score</span><span class="qc-value">0%</span></div>
+                    <div class="qc-progress"><span style="width:0%"></span></div>
+                    <div class="qc-footer">
+                        <span class="chip chip-advance"><i class="ri-leaf-line"></i> Advanced</span>
+                        <button class="play-btn"><i class="ri-play-fill"></i><span>Play</span></button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-inner">
+            <div>Made By <strong>Muhammad Shayan</strong></div>
+            <div class="social">
+                <a href="#" aria-label="GitHub"><i class="ri-github-fill"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-box-fill"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
