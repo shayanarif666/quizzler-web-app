@@ -2,6 +2,8 @@
    Quizzler - Complete CSS
    ========================= */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
     --bg: #f6f7fb;
     --card: #fff;
@@ -42,7 +44,7 @@ body {
 
 body {
     margin: 0;
-    font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+
     background: var(--bg);
     color: var(--text);
 }
@@ -67,10 +69,12 @@ body {
 }
 
 .brand {
-    font-weight: 800;
     letter-spacing: .5px;
     font-size: 26px;
     color: var(--primary);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .search {
@@ -854,6 +858,7 @@ body[data-theme="dark"] .chip-beginner {
     background: #0f1b14;
     color: #8fdba4;
 }
+
 body[data-theme="dark"] .section-label {
     color: #fff;
 }
@@ -916,39 +921,54 @@ body[data-theme="dark"] #fly-search input {
     border: 1px solid var(--border);
     color: var(--text);
 }
+
 /* Selection feedback */
 .qm-opt.correct {
-  border-color: #22c55e;
-  background: #ecfdf5;
-  color: #166534;
+    border-color: #22c55e;
+    background: #ecfdf5;
+    color: #166534;
 }
-.qm-opt.correct input { accent-color: #22c55e; }
+
+.qm-opt.correct input {
+    accent-color: #22c55e;
+}
 
 .qm-opt.wrong {
-  border-color: #dc2626;
-  background: #fef2f2;
-  color: #991b1b;
+    border-color: #dc2626;
+    background: #fef2f2;
+    color: #991b1b;
 }
-.qm-opt.wrong input { accent-color: #dc2626; }
+
+.qm-opt.wrong input {
+    accent-color: #dc2626;
+}
 
 .qm-opt input {
-  outline: none;
-  box-shadow: none;
-  accent-color: currentColor; /* keeps theme color when marked correct/wrong */
+    outline: none;
+    box-shadow: none;
+    accent-color: currentColor;
+    /* keeps theme color when marked correct/wrong */
 }
+
 .qm-opt input:focus {
-  outline: none;
-  box-shadow: none;
+    outline: none;
+    box-shadow: none;
 }
+
 .qm-opt:focus-within {
-  box-shadow: none;
-  border-color: var(--border);
+    box-shadow: none;
+    border-color: var(--border);
 }
 
 /* Dark theme tweaks for feedback */
 body[data-theme="dark"] .qm-opt.correct {
-  background: #0d1f16; color: #86efac; border-color: #14532d;
+    background: #0d1f16;
+    color: #86efac;
+    border-color: #14532d;
 }
+
 body[data-theme="dark"] .qm-opt.wrong {
-  background: #2a1111; color: #fca5a5; border-color: #7f1d1d;
+    background: #2a1111;
+    color: #fca5a5;
+    border-color: #7f1d1d;
 }
